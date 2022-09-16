@@ -1,9 +1,10 @@
 # js-check
 
+![npm](https://img.shields.io/npm/v/@crazywhite/js-check) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@crazywhite/js-check)  
 check some javascript data via vanillaJS
 
 ```js
-const { string_t, number_t, boolean_t, object_t, array_t, check } = require("js-check.umd.js");
+const { string_t, number_t, boolean_t, object_t, array_t, check } = require("@crazywhite/js-check");
 
 check(string_t(), "this arg should be string"); // => true
 check(string_t(), 12.3); // => false
