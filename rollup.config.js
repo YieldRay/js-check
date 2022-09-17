@@ -1,6 +1,5 @@
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
-const name = "js-check";
 
 export default {
     input: "src/main.ts",
@@ -9,12 +8,7 @@ export default {
             format: "umd",
             sourcemap: true,
             name: "jsCheck",
-            file: `dist/${name}.umd.js`,
-        },
-        {
-            format: "module",
-            sourcemap: true,
-            file: `dist/${name}.module.js`,
+            file: `dist/js-check.umd.js`,
         },
     ],
     plugins: [typescript(), terser()],
